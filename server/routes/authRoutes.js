@@ -37,7 +37,7 @@ router.get('/google/callback',
       } 
     }, process.env.JWT_SECRET, { expiresIn: '7d' });
 
-    res.redirect(`http://localhost:5173/auth/callback?token=${token}`);
+    res.redirect(`https://mindspace-app.vercel.app/auth/callback?token=${token}`);
   }
 );
 

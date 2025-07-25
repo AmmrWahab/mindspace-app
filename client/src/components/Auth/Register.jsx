@@ -200,7 +200,7 @@ function Register() {
 {/* Google Login Button */}
 <div style={{ marginTop: '1.5rem' }}>
   <a
-    href="http://localhost:5000/api/auth/google"
+    href="https://mindspace-backend.loca.lt/api/auth/google"
     style={{
       display: 'flex',
       alignItems: 'center',
