@@ -1,5 +1,9 @@
 // server/server.js
-require('dotenv').config({ path: '.env' });
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config({ path: '.env' });
+} else {
+  console.log('✅ Running in production — using environment variables from Render');
+}
 
 const express = require('express');
 const cors = require('cors');
@@ -157,6 +161,6 @@ app.post('/api/test', (req, res) => {
 });
 
 // 🚪 Start Server
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on http://0.0.0.0:${PORT}`);
 });
