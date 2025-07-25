@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://seven-jars-film.loca.lt',
+  baseURL: 'https://mindspace-backend.loca.lt',
 });
 
 // Add token to every request
