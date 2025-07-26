@@ -5,7 +5,11 @@
       "destination": "/index.html"
     },
     {
-      "source": "/auth/callback(.*)",
+      "source": "/auth/callback/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
