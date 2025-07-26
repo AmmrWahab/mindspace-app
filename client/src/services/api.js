@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://mindspace-backend.onrender.com/api' // ✅ No spaces
+  baseURL: 'https://mindspace-app.onrender.com/api' // ✅ No spaces
 });
 
 // Add token to every request

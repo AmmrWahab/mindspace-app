@@ -200,7 +200,7 @@ function Register() {
 {/* Google Login Button */}
 <div style={{ marginTop: '1.5rem' }}>
   <a
-   href="https://mindspace-backend.onrender.com/api/auth/google"
+   href="https://mindspace-app.onrender.com/api/auth/google"
     style={{
       display: 'flex',
       alignItems: 'center',
